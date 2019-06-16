@@ -1,0 +1,27 @@
+.wrapper {
+  margin-top: 120px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.item-list {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 30px 30px 30px 0;
+}
+
+.price {
+  text-align: right;
+}

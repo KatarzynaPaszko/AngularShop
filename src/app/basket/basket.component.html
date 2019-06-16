@@ -1,0 +1,13 @@
+<section class="container wrapper">
+  <h2 class="title">Products in cart:</h2>
+  <ul class="item-list">
+    <li *ngFor="let product of basket | async" class="row item">
+      <img [src]="product.imgUrl" width="150px" />
+      <p class="col-3">{{ product.name }}</p>
+      <p class="col-1 price">{{ product.price | currency: "USD" }}</p>
+      <button (click)="deletefromBasket(product.id)" class="btn btn-danger">
+        Delete
+      </button>
+    </li>
+  </ul>
+</section>

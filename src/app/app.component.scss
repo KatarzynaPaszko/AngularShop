@@ -1,0 +1,25 @@
+.navbar {
+  justify-content: space-between;
+  background-color: darkgrey;
+}
+
+.logo {
+  font-size: 40px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.nav-item {
+  padding: 2px;
+  margin-left: 20px;
+}
+
+.nav-item:hover {
+  background: green;
+}
+
+.is-active {
+  background: green;
+}

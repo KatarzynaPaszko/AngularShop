@@ -1,0 +1,58 @@
+.wrapper {
+  margin-top: 120px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.item-list {
+  list-style: none;
+  display: flex;
+}
+
+.item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-link {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.name {
+  text-align: center;
+  padding: 10px 10px 0 10px;
+  flex: 1;
+}
+
+.price {
+  padding: 10px;
+}
+
+.btn-green {
+  background: green;
+  color: white;
+
+  &:hover {
+    background: darken(green, 20%);
+  }
+}
+
+.newProduct {
+  background-color: blue;
+  color: white;
+  padding: 5px 20px;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+}

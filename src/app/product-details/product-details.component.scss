@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+  margin-top: 120px;
+}
+
+.name {
+  padding: 10px 10px 0 10px;
+}
+
+.price {
+  padding: 10px;
+}
+
+.btn-green {
+  background: green;
+  color: white;
+
+  &:hover {
+    background: darken(green, 20%);
+  }
+}
+
+.btn-secondary {
+  position: absolute;
+  top: 90px;
+  left: 0;
+}

@@ -1,0 +1,19 @@
+<div class="container wrapper">
+  <h2 class="title">Products</h2>
+  <ul class="row item-list">
+    <li
+      *ngFor="let product of products | async"
+      class="col-sm-12 col-md-4 col-lg-3 item"
+    >
+      <a routerLink="/products/{{ product.id }}" class="item-link">
+        <span class="newProduct" *ngIf="product && product.newProduct">New</span>
+        <img [src]="product.imgUrl" width="150px" />
+        <h5 class="name">{{ product.name | slice:0:20 }}</h5>
+        <h5 class="price">{{ product.price | currency: "USD" }}</h5>
+      </a>
+      <button (click)="addToBasket(product)" class="btn btn-green">
+        Add to basket
+      </button>
+    </li>
+  </ul>
+</div>
